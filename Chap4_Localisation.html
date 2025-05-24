@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SNT_2GT8_Localisation</title>
+    <link id="theme-link" rel="stylesheet" href="style.css" />
+
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="dropdown">
+        <button class="flag">
+          <img src="./assets/flag/france.png" alt="Français" width="22" />
+        </button>
+        <div class="dropdown-content">
+          <a href="./Chap4_Localisation.html">Français</a>
+          <a href="./Chap4_Localisation_en.html">Anglais</a>
+          <a href="./Chap4_Localisation_de.html">Allemand</a>
+        </div>
+      </div>
+      <button id="toggle-theme" class="toggle-theme">
+        <span id="theme-icon" class="material-symbols-outlined">dark_mode</span>
+      </button>
+    </header>
+    <nav>
+      <div class="list">
+        <ul>
+          <li>
+            <div class="title_nav">
+              SNT 2<i id="min">nde</i>8 <br />
+              Descartes
+            </div>
+          </li>
+
+          <li>
+            <a href="./Chap1_Internet.html">
+              <button class="dropbtn">
+                <span class="material-symbols-outlined"> hub </span
+                ><br />Internet
+              </button>
+            </a>
+          </li>
+          <li>
+            <a href="./Chap2_Web.html">
+              <button class="dropbtn">
+                <span class="material-symbols-outlined"> language </span
+                ><br />Le Web
+              </button>
+            </a>
+          </li>
+          <li>
+            <a href="./Chap3_Réseaux-Sociaux.html">
+              <button class="dropbtn">
+                <span class="material-symbols-outlined"> share </span
+                ><br />Réseaux Sociaux
+              </button>
+            </a>
+          </li>
+          <li>
+            <a href="./Chap4_Localisation.html"
+              ><button>
+                <span class="material-symbols-outlined"> location_on </span
+                ><br />Localisation
+              </button></a
+            >
+          </li>
+          <li>
+            <a href="./Chap5_Données-Numériques.html"
+              ><button>
+                <span class="material-symbols-outlined"> database_search </span>
+                <br />Données Numériques
+              </button></a
+            >
+          </li>
+          <li>
+            <a href="./Chap6_IoT.html"
+              ><button>
+                <span class="material-symbols-outlined"> home_iot_device </span
+                ><br />Objets Connectés
+              </button></a
+            >
+          </li>
+          <li>
+            <a href="./Chap7_Photo-Numérique.html"
+              ><button>
+                <span class="material-symbols-outlined"> photo_camera </span
+                ><br />Photo Numérique
+              </button></a
+            >
+          </li>
+          <li>
+            <a href="./Chap8_IA.html"
+              ><button>
+                <span class="material-symbols-outlined">
+                  network_intelligence </span
+                ><br />IA
+              </button></a
+            >
+          </li>
+          <li>
+            <a href="./Ressources.html"
+              ><button>
+                <span class="material-symbols-outlined"> library_books </span
+                ><br />Ressources
+              </button></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="">
+        <h1>Localisation</h1>
+        <div class="def" id="def">
+          <p>
+            La <b>localisation</b> fait référence à la capacité de déterminer la
+            position géographique d'un objet ou d'une personne. Cela inclut
+            l'utilisation de technologies comme le GPS (Global Positioning
+            System) et d'autres systèmes de géolocalisation.
+          </p>
+        </div>
+        <div class="flexbox">
+          <ul>
+            <li>
+              <p id="txt">
+                La localisation repose sur des technologies qui permettent de
+                déterminer où se trouve un objet ou une personne dans l’espace,
+                souvent avec une grande précision. Parmi les outils les plus
+                courants, on trouve le GPS (Global Positioning System), qui
+                utilise des satellites pour trianguler une position, ainsi que
+                les réseaux Wi-Fi, les balises Bluetooth et les antennes relais
+                des opérateurs mobiles, qui offrent des solutions de
+                localisation en intérieur ou dans des environnements denses.
+                Elle est largement utilisée dans des applications quotidiennes :
+                navigation GPS pour les déplacements, suivi des activités
+                sportives via des montres connectées, localisation des appareils
+                perdus avec des services comme "Find My Device", ou encore
+                services de livraison permettant de suivre en direct les colis
+                ou les chauffeurs. Dans le commerce, la localisation permet de
+                proposer des publicités ou des offres adaptées à la position
+                géographique d’un utilisateur.
+              </p>
+            </li>
+            <li>
+              <img
+                id="img"
+                src="./assets/img/localisation.png"
+                height="240"
+                alt=""
+                id="img"
+                class="main-img"
+              />
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <img src="./assets/img/gps.png" height="400" alt="" id="img2" />
+            </li>
+          </ul>
+        </div>
+        <div class="download" id="dwn">
+          <a
+            href="./assets/cours/Chapitre4_Geolocalisation et cartographie.pdf"
+            download="SNT_2nde_Chap4_Localisation"
+            ><button
+              class="download-button"
+              title="Télécharger le cours"
+              type="button"
+            >
+              <span class="material-symbols-outlined"> download </span>
+            </button>
+          </a>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2025 - JulesC, LucasR, AurélienD - 2nde8</p>
+    </footer>
+    <script>
+      function setTheme(mode) {
+        const themeLink = document.getElementById("theme-link");
+        const themeIcon = document.getElementById("theme-icon");
+
+        if (mode === "dark") {
+          themeLink.href = "dark-theme.css";
+          themeIcon.textContent = "light_mode"; // Soleil pour mode sombre
+          localStorage.setItem("theme", "dark");
+        } else {
+          themeLink.href = "light-theme.css";
+          themeIcon.textContent = "dark_mode"; // Lune pour mode clair
+          localStorage.setItem("theme", "light");
+        }
+      }
+
+      function detectTheme() {
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme) {
+          setTheme(savedTheme);
+        } else {
+          const darkMode = window.matchMedia(
+            "(prefers-color-scheme: dark)"
+          ).matches;
+          setTheme(darkMode ? "dark" : "light");
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        detectTheme();
+        document
+          .getElementById("toggle-theme")
+          .addEventListener("click", function () {
+            const currentTheme =
+              localStorage.getItem("theme") === "dark" ? "light" : "dark";
+            setTheme(currentTheme);
+          });
+      });
+
+      // Mettre à jour en cas de changement du système
+      window
+        .matchMedia("(prefers-color-scheme: dark)")
+        .addEventListener("change", function (e) {
+          if (!localStorage.getItem("theme")) {
+            setTheme(e.matches ? "dark" : "light");
+          }
+        });
+    </script>
+  </body>
+</html>

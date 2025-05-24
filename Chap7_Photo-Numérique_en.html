@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SNT_2GT8_Digital-Photo</title>
+    <link id="theme-link" rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="dropdown">
+        <button class="flag">
+          <img
+            src="./assets/flag/united-kingdom.png"
+            alt="English"
+            width="22"
+          />
+        </button>
+        <div class="dropdown-content">
+          <a href="./Chap7_Photo-Numérique.html">Français</a>
+          <a href="./Chap7_Photo-Numérique_en.html">Anglais</a>
+          <a href="./Chap7_Photo-Numérique_de.html">Allemand</a>
+        </div>
+      </div>
+      <button id="toggle-theme" class="toggle-theme">
+        <span id="theme-icon" class="material-symbols-outlined">dark_mode</span>
+      </button>
+    </header>
+    <nav>
+      <div class="list">
+        <ul>
+          <li>
+            <div class="title_nav">
+              SNT 2<i id="min">nde</i>8 <br />
+              Descartes
+            </div>
+          </li>
+
+          <li>
+            <a href="./Chap1_Internet_en.html">
+              <button class="dropbtn">
+                <span class="material-symbols-outlined"> hub </span
+                ><br />Internet
+              </button>
+            </a>
+          </li>
+          <li>
+            <a href="./Chap2_Web_en.html">
+              <button class="dropbtn">
+                <span class="material-symbols-outlined"> language </span
+                ><br />The Web
+              </button>
+            </a>
+          </li>
+          <li>
+            <a href="./Chap3_Réseaux-Sociaux_en.html">
+              <button class="dropbtn">
+                <span class="material-symbols-outlined"> share </span
+                ><br />Social Media
+              </button>
+            </a>
+          </li>
+          <li>
+            <a href="./Chap4_Localisation_en.html"
+              ><button>
+                <span class="material-symbols-outlined"> location_on </span
+                ><br />Geolocation
+              </button></a
+            >
+          </li>
+          <li>
+            <a href="./Chap5_Données-Numériques_en.html"
+              ><button>
+                <span class="material-symbols-outlined"> database_search </span>
+                <br />Digital Data
+              </button></a
+            >
+          </li>
+          <li>
+            <a href="./Chap6_IoT_en.html"
+              ><button>
+                <span class="material-symbols-outlined"> home_iot_device </span
+                ><br />Internet of Things
+              </button></a
+            >
+          </li>
+          <li>
+            <a href="./Chap7_Photo-Numérique_en.html"
+              ><button>
+                <span class="material-symbols-outlined"> photo_camera </span
+                ><br />Digital Photo
+              </button></a
+            >
+          </li>
+          <li>
+            <a href="./Chap8_IA_en.html"
+              ><button>
+                <span class="material-symbols-outlined">
+                  network_intelligence </span
+                ><br />Artificial Intelligence
+              </button></a
+            >
+          </li>
+          <li>
+            <a href="./Ressources_en.html"
+              ><button>
+                <span class="material-symbols-outlined"> library_books </span
+                ><br />Resources
+              </button></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="">
+        <h1>Digital photos</h1>
+        <div class="def">
+          <p>
+            <b>Digital photos</b> are images captured, stored, and displayed as
+            digital files. They have revolutionized traditional photography by
+            simplifying the process of capturing, processing, and sharing
+            images.
+          </p>
+        </div>
+        <div class="flexbox2">
+          <ul>
+            <li>
+              <img
+                src="./assets/img/photo_numérique.png"
+                height="275"
+                alt=""
+                id="img"
+                class="main-img"
+              />
+            </li>
+            <li>
+              <p id="txt">
+                Digital photos are images captured and stored as digital files
+                using devices equipped with sensors, such as cameras,
+                smartphones, or drones. They offer a resolution expressed in
+                pixels, a wide variety of file formats (JPEG, RAW, PNG, etc.),
+                and varying color depths for precise rendering. They allow for
+                instant visualization, easy storage, rapid sharing, and advanced
+                editing through dedicated software. However, they can suffer
+                from quality loss with compression, be vulnerable to data loss,
+                and depend on technological compatibility. Digital photography
+                is constantly evolving thanks to advancements such as
+                computational photography, the integration of artificial
+                intelligence, increased resolution, and the emergence of
+                immersive formats like 360° photos. This technology has
+                transformed the way images are created, shared, and used in our
+                daily lives.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <!-- <div class="download" id="dwn">
+          <a
+            href=""
+            download="SNT_2nde_Chap7_Photo Numérique"
+            ><button
+              class="download-button"
+              title="Télécharger le cours"
+              type="button"
+            >
+              <span class="material-symbols-outlined"> download </span>
+            </button>
+          </a>
+        </div> -->
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2025 - JulesC, LucasR, AurélienD - 2nde8</p>
+    </footer>
+    <script>
+      function setTheme(mode) {
+        const themeLink = document.getElementById("theme-link");
+        const themeIcon = document.getElementById("theme-icon");
+
+        if (mode === "dark") {
+          themeLink.href = "dark-theme.css";
+          themeIcon.textContent = "light_mode"; // Soleil pour mode sombre
+          localStorage.setItem("theme", "dark");
+        } else {
+          themeLink.href = "light-theme.css";
+          themeIcon.textContent = "dark_mode"; // Lune pour mode clair
+          localStorage.setItem("theme", "light");
+        }
+      }
+
+      function detectTheme() {
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme) {
+          setTheme(savedTheme);
+        } else {
+          const darkMode = window.matchMedia(
+            "(prefers-color-scheme: dark)"
+          ).matches;
+          setTheme(darkMode ? "dark" : "light");
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        detectTheme();
+        document
+          .getElementById("toggle-theme")
+          .addEventListener("click", function () {
+            const currentTheme =
+              localStorage.getItem("theme") === "dark" ? "light" : "dark";
+            setTheme(currentTheme);
+          });
+      });
+
+      // Mettre à jour en cas de changement du système
+      window
+        .matchMedia("(prefers-color-scheme: dark)")
+        .addEventListener("change", function (e) {
+          if (!localStorage.getItem("theme")) {
+            setTheme(e.matches ? "dark" : "light");
+          }
+        });
+    </script>
+  </body>
+</html>

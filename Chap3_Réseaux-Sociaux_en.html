@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SNT_2GT8_Social-Media</title>
+    <link id="theme-link" rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="dropdown">
+        <button class="flag">
+          <img
+            src="./assets/flag/united-kingdom.png"
+            alt="English"
+            width="22"
+          />
+        </button>
+        <div class="dropdown-content">
+          <a href="./Chap3_Réseaux-Sociaux.html">Français</a>
+          <a href="./Chap3_Réseaux-Sociaux_en.html">Anglais</a>
+          <a href="./Chap3_Réseaux-Sociaux_de.html">Allemand</a>
+        </div>
+      </div>
+      <button id="toggle-theme" class="toggle-theme">
+        <span id="theme-icon" class="material-symbols-outlined">dark_mode</span>
+      </button>
+    </header>
+    <nav>
+      <div class="list">
+        <ul>
+          <li>
+            <div class="title_nav">
+              SNT 2<i id="min">nde</i>8 <br />
+              Descartes
+            </div>
+          </li>
+
+          <li>
+            <a href="./Chap1_Internet_en.html">
+              <button class="dropbtn">
+                <span class="material-symbols-outlined"> hub </span
+                ><br />Internet
+              </button>
+            </a>
+          </li>
+          <li>
+            <a href="./Chap2_Web_en.html">
+              <button class="dropbtn">
+                <span class="material-symbols-outlined"> language </span
+                ><br />The Web
+              </button>
+            </a>
+          </li>
+          <li>
+            <a href="./Chap3_Réseaux-Sociaux_en.html">
+              <button class="dropbtn">
+                <span class="material-symbols-outlined"> share </span
+                ><br />Social Media
+              </button>
+            </a>
+          </li>
+          <li>
+            <a href="./Chap4_Localisation_en.html"
+              ><button>
+                <span class="material-symbols-outlined"> location_on </span
+                ><br />Geolocation
+              </button></a
+            >
+          </li>
+          <li>
+            <a href="./Chap5_Données-Numériques_en.html"
+              ><button>
+                <span class="material-symbols-outlined"> database_search </span>
+                <br />Digital Data
+              </button></a
+            >
+          </li>
+          <li>
+            <a href="./Chap6_IoT_en.html"
+              ><button>
+                <span class="material-symbols-outlined"> home_iot_device </span
+                ><br />Internet of Things
+              </button></a
+            >
+          </li>
+          <li>
+            <a href="./Chap7_Photo-Numérique_en.html"
+              ><button>
+                <span class="material-symbols-outlined"> photo_camera </span
+                ><br />Digital Photo
+              </button></a
+            >
+          </li>
+          <li>
+            <a href="./Chap8_IA_en.html"
+              ><button>
+                <span class="material-symbols-outlined">
+                  network_intelligence </span
+                ><br />Artificial Intelligence
+              </button></a
+            >
+          </li>
+          <li>
+            <a href="./Ressources_en.html"
+              ><button>
+                <span class="material-symbols-outlined"> library_books </span
+                ><br />Resources
+              </button></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="">
+        <h1>Social Media</h1>
+        <div class="def" id="def">
+          <p>
+            In the humanities and social sciences, the term social network
+            refers to an arrangement of connections between individuals or
+            organizations, forming a meaningful group such as family,
+            colleagues, a group of friends, or a community. In the digital
+            sense, <b>social media</b> are online platforms that allow users to
+            share content, interact, and connect with other people or
+            communities.
+          </p>
+        </div>
+        <div class="flexbox2">
+          <ul>
+            <li>
+              <img
+                src="./assets/img/réseaux_sociaux.jpg"
+                height="300"
+                alt="Liste de réseaux sociaux"
+                id="img"
+                class="main-img"
+              />
+            </li>
+            <li>
+              <p id="txt">
+                Social media are interactive digital platforms that allow users
+                to create a personal or professional profile, share various
+                types of content (texts, images, videos, links), and interact
+                with other individuals or communities with shared interests. Now
+                omnipresent in daily life, they facilitate instant
+                communication, the expansion of social networks, and the rapid
+                spread of information on a global scale. Platforms such as
+                Facebook, Instagram, X (formerly Twitter), TikTok, LinkedIn, and
+                Snapchat serve a variety of purposes, ranging from entertainment
+                to professional promotion. They are used both for personal
+                connections and for marketing, business, or professional
+                networking goals. However, their use also raises several
+                concerns, particularly regarding the protection of personal data
+                and privacy. Misinformation spreads easily on these platforms,
+                and excessive use can lead to digital addiction, with negative
+                effects on mental health and real-life social relationships.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="download" id="dwn">
+          <a
+            href="./assets/cours/Chapitre3_Réseaux-sociaux.pdf"
+            download="SNT_2nde_Chap3_Réseaux Sociaux"
+            ><button
+              class="download-button"
+              title="Télécharger le cours"
+              type="button"
+            >
+              <span class="material-symbols-outlined"> download </span>
+            </button>
+          </a>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2025 - JulesC, LucasR, AurélienD - 2nde8</p>
+    </footer>
+    <script>
+      function setTheme(mode) {
+        const themeLink = document.getElementById("theme-link");
+        const themeIcon = document.getElementById("theme-icon");
+
+        if (mode === "dark") {
+          themeLink.href = "dark-theme.css";
+          themeIcon.textContent = "light_mode"; // Soleil pour mode sombre
+          localStorage.setItem("theme", "dark");
+        } else {
+          themeLink.href = "light-theme.css";
+          themeIcon.textContent = "dark_mode"; // Lune pour mode clair
+          localStorage.setItem("theme", "light");
+        }
+      }
+
+      function detectTheme() {
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme) {
+          setTheme(savedTheme);
+        } else {
+          const darkMode = window.matchMedia(
+            "(prefers-color-scheme: dark)"
+          ).matches;
+          setTheme(darkMode ? "dark" : "light");
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        detectTheme();
+        document
+          .getElementById("toggle-theme")
+          .addEventListener("click", function () {
+            const currentTheme =
+              localStorage.getItem("theme") === "dark" ? "light" : "dark";
+            setTheme(currentTheme);
+          });
+      });
+
+      // Mettre à jour en cas de changement du système
+      window
+        .matchMedia("(prefers-color-scheme: dark)")
+        .addEventListener("change", function (e) {
+          if (!localStorage.getItem("theme")) {
+            setTheme(e.matches ? "dark" : "light");
+          }
+        });
+    </script>
+  </body>
+</html>

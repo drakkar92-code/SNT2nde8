@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SNT_2GT8_Web</title>
+    <link id="theme-link" rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="dropdown">
+        <button class="flag">
+          <img
+            src="./assets/flag/united-kingdom.png"
+            alt="English"
+            width="22"
+          />
+        </button>
+        <div class="dropdown-content">
+          <a href="./Chap2_Web.html">Français</a>
+          <a href="./Chap2_Web_en.html">Anglais</a>
+          <a href="./Chap2_Web_de.html">Allemand</a>
+        </div>
+      </div>
+      <button id="toggle-theme" class="toggle-theme">
+        <span id="theme-icon" class="material-symbols-outlined">dark_mode</span>
+      </button>
+    </header>
+    <nav>
+      <div class="list">
+        <ul>
+          <li>
+            <div class="title_nav">
+              SNT 2<i id="min">nde</i>8 <br />
+              Descartes
+            </div>
+          </li>
+
+          <li>
+            <a href="./Chap1_Internet_en.html">
+              <button class="dropbtn">
+                <span class="material-symbols-outlined"> hub </span
+                ><br />Internet
+              </button>
+            </a>
+          </li>
+          <li>
+            <a href="./Chap2_Web_en.html">
+              <button class="dropbtn">
+                <span class="material-symbols-outlined"> language </span
+                ><br />The Web
+              </button>
+            </a>
+          </li>
+          <li>
+            <a href="./Chap3_Réseaux-Sociaux_en.html">
+              <button class="dropbtn">
+                <span class="material-symbols-outlined"> share </span
+                ><br />Social Media
+              </button>
+            </a>
+          </li>
+          <li>
+            <a href="./Chap4_Localisation_en.html"
+              ><button>
+                <span class="material-symbols-outlined"> location_on </span
+                ><br />Geolocation
+              </button></a
+            >
+          </li>
+          <li>
+            <a href="./Chap5_Données-Numériques_en.html"
+              ><button>
+                <span class="material-symbols-outlined"> database_search </span>
+                <br />Digital Data
+              </button></a
+            >
+          </li>
+          <li>
+            <a href="./Chap6_IoT_en.html"
+              ><button>
+                <span class="material-symbols-outlined"> home_iot_device </span
+                ><br />Internet of Things
+              </button></a
+            >
+          </li>
+          <li>
+            <a href="./Chap7_Photo-Numérique_en.html"
+              ><button>
+                <span class="material-symbols-outlined"> photo_camera </span
+                ><br />Digital Photo
+              </button></a
+            >
+          </li>
+          <li>
+            <a href="./Chap8_IA_en.html"
+              ><button>
+                <span class="material-symbols-outlined">
+                  network_intelligence </span
+                ><br />Artificial Intelligence
+              </button></a
+            >
+          </li>
+          <li>
+            <a href="./Ressources_en.html"
+              ><button>
+                <span class="material-symbols-outlined"> library_books </span
+                ><br />Resources
+              </button></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div>
+        <h1>The Web</h1>
+        <div class="def" id="def">
+          <p>
+            The web, or the <b>World Wide Web</b>, is a global system of
+            interconnected pages and content accessible via the Internet,
+            allowing users to browse, view, and share information through
+            protocols like HTTP and web browsers.
+          </p>
+        </div>
+        <div class="flexbox2">
+          <ul>
+            <li>
+              <p id="txt">
+                The Web, or World Wide Web (WWW), is a public hypertext system
+                operating on the Internet, allowing users to browse pages
+                grouped into websites using a browser. The term "Web" refers to
+                the hyperlinks that connect web pages, creating an image of a
+                spider's web. The Web was invented in 1989-1990 at CERN by Tim
+                Berners-Lee and Robert Cailliau. It has evolved significantly
+                since then, becoming an essential tool for information
+                retrieval, online shopping, and communication. Although the Web
+                is often confused with the Internet, it is actually an
+                application of the Internet, distinct from other services such
+                as email or peer-to-peer file sharing.
+              </p>
+            </li>
+            <li>
+              <img
+                src="./assets/img/Web.jpg"
+                height="250"
+                alt="Internet"
+                id="img"
+                class="main-img"
+              />
+            </li>
+          </ul>
+        </div>
+        <div class="download" id="dwn">
+          <a
+            href=".//assets/cours/Chapitre2_Web.pdf"
+            download="SNT_2nde_Chap2_Web"
+            ><button
+              class="download-button"
+              title="Télécharger le cours"
+              type="button"
+            >
+              <span class="material-symbols-outlined"> download </span>
+            </button>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 - JulesC, LucasR, AurélienD - 2nde8</p>
+    </footer>
+    <script>
+      function setTheme(mode) {
+        const themeLink = document.getElementById("theme-link");
+        const themeIcon = document.getElementById("theme-icon");
+
+        if (mode === "dark") {
+          themeLink.href = "dark-theme.css";
+          themeIcon.textContent = "light_mode"; // Soleil pour mode sombre
+          localStorage.setItem("theme", "dark");
+        } else {
+          themeLink.href = "light-theme.css";
+          themeIcon.textContent = "dark_mode"; // Lune pour mode clair
+          localStorage.setItem("theme", "light");
+        }
+      }
+
+      function detectTheme() {
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme) {
+          setTheme(savedTheme);
+        } else {
+          const darkMode = window.matchMedia(
+            "(prefers-color-scheme: dark)"
+          ).matches;
+          setTheme(darkMode ? "dark" : "light");
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        detectTheme();
+        document
+          .getElementById("toggle-theme")
+          .addEventListener("click", function () {
+            const currentTheme =
+              localStorage.getItem("theme") === "dark" ? "light" : "dark";
+            setTheme(currentTheme);
+          });
+      });
+
+      // Mettre à jour en cas de changement du système
+      window
+        .matchMedia("(prefers-color-scheme: dark)")
+        .addEventListener("change", function (e) {
+          if (!localStorage.getItem("theme")) {
+            setTheme(e.matches ? "dark" : "light");
+          }
+        });
+    </script>
+  </body>
+</html>

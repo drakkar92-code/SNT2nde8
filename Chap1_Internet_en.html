@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SNT_2GT8_Internet</title>
+    <link id="theme-link" rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="dropdown">
+        <button class="flag">
+          <img
+            src="./assets/flag/united-kingdom.png"
+            alt="English"
+            width="22"
+          />
+        </button>
+        <div class="dropdown-content">
+          <a href="./Chap1_Internet.html">Français</a>
+          <a href="./Chap1_Internet_en.html">Anglais</a>
+          <a href="./Chap1_Internet_de.html">Allemand</a>
+        </div>
+      </div>
+      <button id="toggle-theme" class="toggle-theme">
+        <span id="theme-icon" class="material-symbols-outlined">dark_mode</span>
+      </button>
+    </header>
+    <nav>
+      <div class="list">
+        <ul>
+          <li>
+            <div class="title_nav">
+              SNT 2<i id="min">nde</i>8 <br />
+              Descartes
+            </div>
+          </li>
+
+          <li>
+            <a href="./Chap1_Internet_en.html">
+              <button class="dropbtn">
+                <span class="material-symbols-outlined"> hub </span
+                ><br />Internet
+              </button>
+            </a>
+          </li>
+          <li>
+            <a href="./Chap2_Web_en.html">
+              <button class="dropbtn">
+                <span class="material-symbols-outlined"> language </span
+                ><br />The Web
+              </button>
+            </a>
+          </li>
+          <li>
+            <a href="./Chap3_Réseaux-Sociaux_en.html">
+              <button class="dropbtn">
+                <span class="material-symbols-outlined"> share </span
+                ><br />Social Media
+              </button>
+            </a>
+          </li>
+          <li>
+            <a href="./Chap4_Localisation_en.html"
+              ><button>
+                <span class="material-symbols-outlined"> location_on </span
+                ><br />Geolocation
+              </button></a
+            >
+          </li>
+          <li>
+            <a href="./Chap5_Données-Numériques_en.html"
+              ><button>
+                <span class="material-symbols-outlined"> database_search </span>
+                <br />Digital Data
+              </button></a
+            >
+          </li>
+          <li>
+            <a href="./Chap6_IoT_en.html"
+              ><button>
+                <span class="material-symbols-outlined"> home_iot_device </span
+                ><br />Internet of Things
+              </button></a
+            >
+          </li>
+          <li>
+            <a href="./Chap7_Photo-Numérique_en.html"
+              ><button>
+                <span class="material-symbols-outlined"> photo_camera </span
+                ><br />Digital Photo
+              </button></a
+            >
+          </li>
+          <li>
+            <a href="./Chap8_IA_en.html"
+              ><button>
+                <span class="material-symbols-outlined">
+                  network_intelligence </span
+                ><br />Artificial Intelligence
+              </button></a
+            >
+          </li>
+          <li>
+            <a href="./Ressources_en.html"
+              ><button>
+                <span class="material-symbols-outlined"> library_books </span
+                ><br />Resources
+              </button></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="">
+        <h1>Internet</h1>
+        <div class="def" id="def">
+          <p>
+            <b>Internet</b> is a global computer network of interconnected
+            computers that enables the exchange of data and resources using
+            standardized protocols such as TCP/IP. It consists of a network of
+            millions of both public and private, academic, commercial, and
+            governmental networks. These are grouped into autonomous networks.
+            Today, there are more than 91,000 distinct networks.
+          </p>
+        </div>
+        <div class="flexbox">
+          <ul>
+            <li>
+              <img
+                id="img"
+                class="main-img"
+                src="./assets/img/internet.jpg"
+                alt="Internet"
+                width="370"
+              />
+            </li>
+            <li>
+              <p id="txt">
+                Internet is a worldwide network that connects billions of
+                digital devices, such as computers, smartphones, and servers,
+                enabling fast and reliable information exchange. Operating
+                through standardized protocols like TCP/IP, the Internet
+                facilitates communication between users, access to vast amounts
+                of data, and the use of various services, such as web browsing,
+                email, streaming, and social media. It is structured around a
+                vast physical infrastructure, including submarine cables,
+                satellites, and data centers, ensuring data transmission across
+                the globe. As an essential tool of modern society, the Internet
+                transforms human interactions, commerce, education, and many
+                other fields while also raising challenges related to
+                cybersecurity, regulation, and digital inclusion.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="download" id="dwn">
+          <a
+            href="./assets/cours/Chapitre1_Internet.pdf"
+            download="SNT_2nde_Chap1_Internet"
+            ><button
+              class="download-button"
+              title="Télécharger le cours"
+              type="button"
+            >
+              <span class="material-symbols-outlined"> download </span>
+            </button>
+          </a>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2025 - JulesC, LucasR, AurélienD - 2nde8</p>
+    </footer>
+    <script>
+      function setTheme(mode) {
+        const themeLink = document.getElementById("theme-link");
+        const themeIcon = document.getElementById("theme-icon");
+
+        if (mode === "dark") {
+          themeLink.href = "dark-theme.css";
+          themeIcon.textContent = "light_mode"; // Soleil pour mode sombre
+          localStorage.setItem("theme", "dark");
+        } else {
+          themeLink.href = "light-theme.css";
+          themeIcon.textContent = "dark_mode"; // Lune pour mode clair
+          localStorage.setItem("theme", "light");
+        }
+      }
+
+      function detectTheme() {
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme) {
+          setTheme(savedTheme);
+        } else {
+          const darkMode = window.matchMedia(
+            "(prefers-color-scheme: dark)"
+          ).matches;
+          setTheme(darkMode ? "dark" : "light");
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        detectTheme();
+        document
+          .getElementById("toggle-theme")
+          .addEventListener("click", function () {
+            const currentTheme =
+              localStorage.getItem("theme") === "dark" ? "light" : "dark";
+            setTheme(currentTheme);
+          });
+      });
+
+      // Mettre à jour en cas de changement du système
+      window
+        .matchMedia("(prefers-color-scheme: dark)")
+        .addEventListener("change", function (e) {
+          if (!localStorage.getItem("theme")) {
+            setTheme(e.matches ? "dark" : "light");
+          }
+        });
+    </script>
+  </body>
+</html>
