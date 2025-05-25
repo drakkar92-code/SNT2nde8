@@ -3,7 +3,7 @@
 
 body {
   min-height: 100vh;
-  min-width: 100vh;
+  min-width: 100%;
   margin: 0 auto;
   color: black;
   text-align: center;
@@ -62,7 +62,7 @@ header {
 
 nav {
   position: sticky;
-  top: 5.5%;
+  top: 5.9%;
   z-index: 2;
   text-align: center;
   margin: 0 auto;
@@ -380,7 +380,7 @@ footer {
 }
 
 /* Responsive styles for smartphones */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   body {
     min-width: 100vw;
     font-size: 1rem;
@@ -393,19 +393,14 @@ footer {
   footer {
     max-width: 100%;
     min-width: 0;
-    padding: 0 5px;
+    padding: 0;
     box-sizing: border-box;
+    position: static;
   }
 
-  nav {
-    max-height: none;
-    padding: 0;
-    position: sticky;
-    top: 4%;
-  }
   nav ul {
     /* flex-direction: column; */
-    align-items: stretch;
+    /* align-items: stretch; */
     padding: 0;
     margin: 0;
   }
@@ -426,8 +421,9 @@ footer {
 
   .flexbox li,
   .flexbox2 li,
-  /* .flexbox-ressources li, */
+  .flexbox-ressources li,
   .flexbox-ressources-externes li {
+    text-align: center;
     margin: 8px 0;
     min-width: unset;
     width: 100%;
@@ -439,9 +435,15 @@ footer {
     max-width: 100%;
   }
 
+  .secondary-img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+
   .download {
     text-align: center;
-    margin-top: 0;
     padding: 5px 0;
+    margin: 0;
   }
 }

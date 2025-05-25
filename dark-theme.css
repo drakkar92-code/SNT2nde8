@@ -3,7 +3,7 @@
 
 body {
   min-height: 100vh;
-  min-width: 100vh;
+  min-width: 100%;
   margin: 0 auto;
   color: rgb(255, 255, 255);
   text-align: center;
@@ -63,7 +63,7 @@ header {
 
 nav {
   position: sticky;
-  top: 5.5%;
+  top: 5.9%;
   z-index: 2;
   text-align: center;
   margin: 0 auto;
@@ -378,4 +378,68 @@ footer {
   padding: 0;
   margin: 0 auto;
   z-index: 2;
+}
+
+@media (max-width: 800px) {
+  body {
+    font-size: 1rem;
+    min-width: 100vw;
+    padding: 0;
+  }
+
+  header,
+  nav,
+  main,
+  footer {
+    min-width: 0;
+    max-width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    position: static;
+  }
+
+  nav ul {
+    padding: 0;
+    margin: 0;
+  }
+  nav ul li {
+    margin: 2px 0;
+    font-size: 0.95rem;
+    padding: 4px 0;
+  }
+
+  .flexbox ul,
+  .flexbox2 ul,
+  .flexbox-ressources ul,
+  .flexbox-ressources-liens ul,
+  .flexbox-ressources-python ul {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .flexbox li,
+  .flexbox2 li,
+  .flexbox-ressources li .flexbox-ressources-liens li {
+    width: 100%;
+    min-width: unset;
+    margin: 8px 0;
+    text-align: center;
+  }
+
+  .main-img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+  .secondary-img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .download {
+    text-align: center;
+    padding: 0 5px;
+    margin: 0;
+  }
 }
