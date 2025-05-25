@@ -378,3 +378,70 @@ footer {
   padding: 0;
   z-index: 2;
 }
+
+/* Responsive styles for smartphones */
+@media (max-width: 600px) {
+  body {
+    min-width: 100vw;
+    font-size: 1rem;
+    padding: 0;
+  }
+
+  header,
+  nav,
+  main,
+  footer {
+    max-width: 100%;
+    min-width: 0;
+    padding: 0 5px;
+    box-sizing: border-box;
+  }
+
+  nav {
+    max-height: none;
+    padding: 0;
+    position: sticky;
+    top: 4%;
+  }
+  nav ul {
+    /* flex-direction: column; */
+    align-items: stretch;
+    padding: 0;
+    margin: 0;
+  }
+  nav ul li {
+    margin: 2px 0;
+    font-size: 0.95rem;
+    padding: 4px 0;
+  }
+
+  .flexbox ul,
+  .flexbox2 ul,
+  .flexbox-ressources ul,
+  .flexbox-ressources-liens ul,
+  .flexbox-ressources-python ul {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .flexbox li,
+  .flexbox2 li,
+  /* .flexbox-ressources li, */
+  .flexbox-ressources-externes li {
+    margin: 8px 0;
+    min-width: unset;
+    width: 100%;
+  }
+
+  .main-img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .download {
+    text-align: center;
+    margin-top: 0;
+    padding: 5px 0;
+  }
+}
